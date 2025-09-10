@@ -1,0 +1,521 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+*{
+	padding: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+
+html{
+	height: 100%;
+	background-image: url(../images/10.jpg ) ;
+	background-attachment: fixed;
+    background-color:#E0DDCA;
+	background-repeat:repeat-x repeat-y;
+    color:#111;
+}
+
+body {
+
+    color:#5c5a5a;
+	line-height: 16px;
+	height: 100%;
+
+    position: relative;
+    margin: auto;
+    width:1340px;
+         font-family: Arial; 
+         font-size:12px;
+         text-align:center;
+}
+/*lacivert live tablo*/ 
+.butongemi1 {
+    color:#11255E;
+    font:bold;
+}
+.tablobaslik1 {
+    cursor: pointer; 
+    text-decoration: none; 
+    font: bold 12px arial;
+    color: #11255E; 
+}
+.tablo1{
+     width: 1340px; 
+     border-spacing:1px 1px;
+     background-color:#cdebbe;
+     color:#11255E;
+     border:0px solid black;
+}
+.tablo1a{
+     width: 1340px; 
+     border-spacing:1px 1px;
+     background-color:#ccc;
+     color:#000;
+     border-bottom:1px solid black;
+
+}
+
+.trbaslik1{
+    background-color: #11255E;
+    color: white;
+    font-weight: bold; 
+    height: 22px; 
+}
+.trsatir1 {
+    
+    color:#11255E;
+    background-color: rgba(255, 255, 255, 1); 
+    border:1px solid #cdebbe;
+    height: 22px; 
+}
+
+.islemtuslari1 {
+     background-color:#11255E; 
+     border:1px Solid #111;
+     color:white;
+     text-decoration:none;
+     width:50px; 
+}
+
+/*turuncu 2. live tablo*/
+.butongemi0 {
+    color:#b83b0d;
+    font:bold;
+}
+.tablobaslik0 {
+    cursor: pointer; 
+    text-decoration: none; 
+    font: bold 12px arial;
+    color: #b83b0d; 
+}
+.tablo0{
+     width: 1340px; 
+     border-spacing:1px 1px;
+     background-color:#cdebbe;
+     color:#b83b0d;
+     border:0px solid black;
+}
+
+.trbaslik0{
+    background-color: #b83b0d;
+    color: white;
+    font-weight: bold; 
+    height: 22px; 
+}
+.trsatir0 {
+    
+    color:#b83b0d;
+    background-color: rgba(255, 255, 255, 1); 
+    border:1px solid #cdebbe;
+    height: 22px; 
+}
+
+.islemtuslari0 {
+     background-color:#b83b0d; 
+     border:1px Solid #b83b0d;
+     color:white;
+     text-decoration:none;
+     width:50px; 
+}
+
+
+/*kırmızı darıca tablo*/
+.butongemi2 {
+    color:#111;
+         font-family: Arial; 
+         font-size:12px;
+         font-weight:bold;
+         text-align:center;
+         
+        cursor: pointer; 
+        text-decoration: none;
+        background-color:transparent;
+        Border:0;
+}
+.tablobaslik2 {
+    cursor: pointer; 
+    text-decoration: none; 
+    font: bold 14px arial;
+    color:#961B1F;
+}
+.tablo2{
+     width: 1340px; 
+     border-spacing:1px 1px;
+     background-color:#E0B2B3;
+     color:#111;
+     border:1px solid black;
+}
+
+.trbaslik2{
+    background-color: #961B1F;
+    color: white;
+    font-weight: bold; 
+    height: 22px; 
+}
+.trsatir2 {
+    color:#111;
+    border-spacing: 1px; 
+    background-color: rgba(255, 255, 255, 1); 
+    height: 22px; 
+}
+
+.tablo2a{
+     width: 1340px; 
+     border-spacing:1px 1px;
+     background-color:#222;
+     color:#111;
+
+}
+
+/*mor tablo*/
+.butongemi3 {
+    color:#553082;
+         font-family: Arial; 
+         font-size:12px;
+         font-weight:bold;
+         text-align:center;
+        cursor: pointer; 
+        text-decoration: none;
+        background-color:transparent;
+        Border:0;
+}
+.tablobaslik3 {
+    cursor: pointer; 
+    text-decoration: none; 
+    font: bold 14px arial;
+    color:#553082;
+}
+
+.tablo3{
+     width: 1340px; 
+     border-spacing:1px 1px;
+     background-color:#D1BFE7;
+     color:#553082;
+          border:1px solid black;
+
+}
+
+.trbaslik3{
+    background-color: #553082;
+    color: white;
+    font-weight: bold; 
+    height: 22px; 
+}
+.trsatir3 {
+    color:#553082;
+    border-spacing: 1px; 
+    background-color: rgba(255, 255, 255, 1); 
+    height: 22px; 
+}
+
+.tablo3a {
+    width: 1340px;
+    border-spacing: 1px 1px;
+    background-color: #222;
+    color: #553082;
+}
+
+/*isliste tablo*/
+.butongemi4 {
+    color:#666;
+         font-family: Arial; 
+         font-size:12px;
+                  font-weight:bold;
+         text-align:center;
+        cursor: pointer; 
+        text-decoration: none;
+        background-color:transparent;
+        Border:0;
+}
+.tablobaslik4 {
+    cursor: pointer; 
+    text-decoration: none; 
+    font: bold 14px arial;
+    color:#333;
+}
+
+.tablo4{
+     width: 1340px; 
+     border-spacing:1px 1px;
+     background-color:#cdebbe;
+     color:#8064A2;
+}
+
+.trbaslik4{
+    background-color:#ccc;
+    color: #333;
+    font-weight: bold; 
+    height: 22px; 
+}
+.trsatir4 {
+    color:#666;
+    border-spacing: 1px; 
+    background-color: rgba(255, 255, 255, 1); 
+    height: 22px; 
+}
+
+
+/*iş liste genişlikleri */
+.tdis1 { width: 25px;}
+.tdis2 { width: 140px;}
+.tdis16 { width: 220px;}
+.tdis3 { width: 160px;}
+.tdis4 { width: 160px;}
+.tdis5 { width: 30px;}
+.tdis6 { width: 80px;}
+.tdis7 { width: 30px;}
+.tdis8 { width: 50px;}
+.tdis9 { width: 90px;}
+.tdis10 { width: 65px;}
+.tdis11 { width: 30px;}
+.tdis12 { width: 30px;}
+.tdis13 { width: 30px;}
+.tdis14 { width: 30px;}
+.tdis15 { width: 60px;}
+
+.tdis17 { width: 55px;}
+.tdis18 { width: 55px;}
+
+
+
+.clear{
+	clear:both;
+	}
+
+.tabandiv{  
+	width:auto;
+	min-height:600px;
+	height:auto;
+	background-color:#222;
+	margin: 0;
+
+/*	-moz-box-shadow:1px 1px 5px #000;
+	-webkit-box-shadow:1px 1px 5px #000;
+	box-shadow:1px 1px 5px #000;
+*/    }
+.ustcizgi{
+	width: auto;
+	height: 5px;
+	margin: 0;
+	background-color: #000;
+	top:0px;
+    }
+
+.altcizgi{
+position: absolute;
+overflow: auto;
+visibility: visible;
+z-index: 1;
+bottom: 0px;
+width: 100%;
+height: 5px;
+margin: 0px;
+padding: 0px;
+background:#009;
+    }
+
+.ustmenu{
+	width: auto;
+	height: 100px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background-color: #ccc;
+    }
+
+.wtabandiv{  
+	width:auto;
+	background-image: url(../images/bgzemin.png ) ;
+	margin: 0;
+
+}
+.wustmenu{
+	width: auto;
+	height: 300px;
+	margin-top:7%;
+	background-color: #333;
+    }
+.wustmenuic{
+    border-color:#444;
+    border:2px solid;
+    position:absolute;
+	width: 360px;
+	height: 200px;
+	margin-top:50px;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, 0%);
+  -moz-box-shadow:1px 1px 5px #aaa;
+	-webkit-box-shadow:1px 1px 5px #aaa;
+	box-shadow:1px 1px 5px #aaa;
+	
+
+
+	background-color: #000;
+    }
+.waltmenu{
+    background-image: url(../images/acbgcizgi.png ) ;
+	width: auto;
+	height: 211px;
+	background-color: #111;
+	top:0px;
+	position:relative;
+	text-align:center;
+    }
+
+.logosol{
+	width: 570px;
+	height: 93px;
+	background-color: #999;
+	margin-bottom: 10px;
+	float:left;
+
+    }
+.logosag{
+	width: 570px;
+	height: 93px;
+	background-color: #999;
+	margin-bottom: 10px;
+	float:right;
+    }
+
+
+
+.orta{
+	width:  100%;
+	height: 100%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background-color: #55eedd;
+    }	
+
+
+	/* chart */
+.container 
+            {
+                width:100px;
+                height:12px;
+                position:relative;
+            }
+            .graph, .datavalue {
+                 width:100%;
+                 height:100%;
+                 top:0;
+                 left:0;
+                 position:absolute;/* for making 2 div overlap*/ 
+                 text-align:right;
+                 color:black;
+                 font-weight:bold;
+            }
+            .graph {
+                width:95%; /*for same looks as it is in excel*/
+            }
+ 
+            .datavalue {
+                z-index:10;/*For make it over graph div*/
+            }
+            .databar {
+               /*show databar style like excel*/
+              background-image:url('../images/grafik.png');
+               background-position:right center;
+               background-repeat:repeat-y;
+               height:96%;
+               background-color:orange;
+            }
+
+		/* range */
+.containerr 
+            {
+                width:100px;
+                height:22px;
+                position:relative;
+            }
+            .graphr, .datavaluer {
+                 width:100%;
+                 height:100%;
+                 top:0;
+                 left:0;
+                 position:absolute;/* for making 2 div overlap*/ 
+                 text-align:right;
+                 color:black;
+                 font-weight:bold;
+            }
+            .graphr {
+                width:112%; /*for same looks as it is in excel*/
+            }
+ 
+            .datavaluer {
+                z-index:13;/*For make it over graph div*/
+                text-align:left;
+                color:black;
+                font-size:12px;
+                margin-top:5px;
+                vertical-align:central;
+            }
+            .databarr1 {
+               /*show databar style like excel*/
+              background-image:url('../images/grafikg.png');
+               background-position:right center;
+               background-repeat:repeat-y;
+               height:100%;
+               background-color:forestgreen;
+            }
+            .databarr2 {
+               /*show databar style like excel*/
+              background-image:url('../images/grafikr.png');
+               background-position:right center;
+               background-repeat:repeat-y;
+               height:100%;
+               background-color:red;
+            }	
+	
+			/* range live */
+.containerrm 
+            {
+                width:100px;
+                height:22px;
+                position:relative;
+            }
+            .graphrm, .datavaluerm {
+                 width:100%;
+                 height:100%;
+                 top:0;
+                 left:0;
+                 position:absolute;/* for making 2 div overlap*/ 
+                 text-align:right;
+                 color:black;
+                 font-weight:bold;
+            }
+            .graphrm {
+                width:166%; /*for same looks as it is in excel*/
+            }
+ 
+            .datavaluerm {
+                z-index:13;/*For make it over graph div*/
+                text-align:left;
+                color:black;
+                font-size:12px;
+                margin-top:5px;
+                vertical-align:central;
+            }
+            .databarr1m {
+               /*show databar style like excel*/
+              background-image:url('../images/grafikg.png');
+               background-position:right center;
+               background-repeat:repeat-y;
+               height:100%;
+               background-color:forestgreen;
+            }
+            .databarr2m {
+               /*show databar style like excel*/
+              background-image:url('../images/grafikr.png');
+               background-position:right center;
+               background-repeat:repeat-y;
+               height:100%;
+               background-color:red;
+            }	
+	
+	
