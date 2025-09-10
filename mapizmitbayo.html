@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>PMTR - Map Izmit Bay</title>
+		
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/jquery.fs.zoetrope.min.js"></script>
+		<script type="text/javascript" src="js/toe.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="js/imgViewer.js"></script>
+	</head>
+	<body style="background-color:black; color:white; font-family:'Trebuchet MS'; font-size:20px;">
+			<h1>Map Izmit Bay Showing All Ports and Piers</h1>
+			
+		
+				<img id="image3" src="images/mapizmitk.jpg" style="border: 3px solid #f00; padding:3px;" width="1900"/>
+				<p> Click Position:  <span id="position3"> </span></p>
+
+<script type="text/javascript">
+    ; (function ($) {
+        $("#image1").imgViewer({
+            onClick: function (e, self) {
+                var pos = self.cursorToImg(e.pageX, e.pageY);
+                $("#position").html(e.pageX + " " + e.pageY + " " + pos.x + " " + pos.y);
+            }
+        });
+        function test(e, self) {
+            var pos = self.cursorToImg(e.pageX, e.pageY);
+            $("#position2").html(e.pageX + " " + e.pageY + " " + pos.x + " " + pos.y);
+        }
+        var img = $("#image2").imgViewer();
+        img.imgViewer("option", "onClick", test);
+
+        $("#image3").imgViewer({
+            onClick: function (e, self) {
+                var pos = self.cursorToImg(e.pageX, e.pageY);
+                $("#position3").html(e.pageX + " " + e.pageY + " " + pos.x + " " + pos.y);
+            }
+        });
+        $("#image4").imgViewer();
+    })(jQuery);
+</script>
+		</body>
+</html>
