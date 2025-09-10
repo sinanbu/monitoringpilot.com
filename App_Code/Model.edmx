@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="PilotdbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityType Name="pilotvardiya">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="kapno" Type="int" />
+          <Property Name="kapadisoyadi" Type="varchar" MaxLength="50" />
+          <Property Name="varno" Type="varchar" MaxLength="6" />
+          <Property Name="toplamissayisi" Type="int" />
+          <Property Name="toplamissuresi" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="toplamzihyor" Type="float" />
+          <Property Name="toplamdinlenme" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="lastday" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="lastseven" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="sevensayi" Type="int" />
+          <Property Name="daysayi" Type="int" />
+          <Property Name="yorgungitteni" Type="int" />
+          <Property Name="yorgungitalli" Type="int" />
+          <Property Name="yedekbir" Type="float" />
+          <Property Name="yedekiki" Type="float" />
+          <Property Name="yorulma" Type="decimal" Precision="5" Scale="4" />
+          <Property Name="yorulmalast" Type="decimal" Precision="5" Scale="4" />
+        </EntityType>
+        <EntityContainer Name="PilotdbModelStoreContainer">
+          <EntitySet Name="pilotvardiya" EntityType="Self.pilotvardiya" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PilotdbModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="PilotdbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="pilotvardiyas" EntityType="PilotdbModel.pilotvardiya" />
+        </EntityContainer>
+        <EntityType Name="pilotvardiya">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="kapno" Type="Int32" />
+          <Property Name="varno" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="toplamissayisi" Type="Int32" />
+          <Property Name="toplamissuresi" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="toplamdinlenme" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="yorulma" Type="Decimal" Precision="5" Scale="4" />
+          <Property Name="yorulmalast" Type="Decimal" Precision="5" Scale="4" />
+          <Property Type="String" Name="kapadisoyadi" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="toplamzihyor" Type="Double" />
+          <Property Name="lastday" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="lastseven" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="yedekbir" Type="Double" />
+          <Property Name="yedekiki" Type="Double" />
+          <Property Name="sevensayi" Type="Int32" />
+          <Property Name="daysayi" Type="Int32" />
+          <Property Name="yorgungitteni" Type="Int32" />
+          <Property Name="yorgungitalli" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PilotdbModelStoreContainer" CdmEntityContainer="PilotdbEntities">
+          <EntitySetMapping Name="pilotvardiyas">
+            <EntityTypeMapping TypeName="PilotdbModel.pilotvardiya">
+              <MappingFragment StoreEntitySet="pilotvardiya">
+                <ScalarProperty Name="yorgungitalli" ColumnName="yorgungitalli" />
+                <ScalarProperty Name="yorgungitteni" ColumnName="yorgungitteni" />
+                <ScalarProperty Name="daysayi" ColumnName="daysayi" />
+                <ScalarProperty Name="sevensayi" ColumnName="sevensayi" />
+                <ScalarProperty Name="yedekiki" ColumnName="yedekiki" />
+                <ScalarProperty Name="yedekbir" ColumnName="yedekbir" />
+                <ScalarProperty Name="lastseven" ColumnName="lastseven" />
+                <ScalarProperty Name="lastday" ColumnName="lastday" />
+                <ScalarProperty Name="toplamzihyor" ColumnName="toplamzihyor" />
+                <ScalarProperty Name="kapadisoyadi" ColumnName="kapadisoyadi" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="kapno" ColumnName="kapno" />
+                <ScalarProperty Name="varno" ColumnName="varno" />
+                <ScalarProperty Name="toplamissayisi" ColumnName="toplamissayisi" />
+                <ScalarProperty Name="toplamissuresi" ColumnName="toplamissuresi" />
+                <ScalarProperty Name="toplamdinlenme" ColumnName="toplamdinlenme" />
+                <ScalarProperty Name="yorulma" ColumnName="yorulma" />
+                <ScalarProperty Name="yorulmalast" ColumnName="yorulmalast" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="PilotdbModel1vardetay.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityType Name="vardiyadetay">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="kapno" Type="int" />
+          <Property Name="degismecikapno" Type="int" />
+          <Property Name="varid" Type="varchar" MaxLength="1" />
+          <Property Name="varno" Type="varchar" MaxLength="6" />
+          <Property Name="imono" Type="int" />
+          <Property Name="gemiadi" Type="nvarchar" MaxLength="30" />
+          <Property Name="bayrak" Type="nvarchar" MaxLength="20" />
+          <Property Name="grt" Type="varchar" MaxLength="6" />
+          <Property Name="tip" Type="varchar" MaxLength="16" />
+          <Property Name="binisyeri" Type="varchar" MaxLength="20" />
+          <Property Name="binisrihtim" Type="varchar" MaxLength="16" />
+          <Property Name="inisyeri" Type="varchar" MaxLength="20" />
+          <Property Name="inisrihtim" Type="varchar" MaxLength="16" />
+          <Property Name="istasyoncikis" Type="varchar" MaxLength="16" />
+          <Property Name="pob" Type="varchar" MaxLength="16" />
+          <Property Name="poff" Type="varchar" MaxLength="16" />
+          <Property Name="istasyongelis" Type="varchar" MaxLength="16" />
+          <Property Name="manevraiptal" Type="varchar" MaxLength="1" />
+          <Property Name="rangeleft" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="rangerest" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="rangework" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="notlar" Type="nvarchar" MaxLength="200" />
+          <Property Name="talepno" Type="varchar" MaxLength="20" />
+          <Property Name="jnot" Type="nvarchar" MaxLength="500" />
+          <Property Name="rom1" Type="nvarchar" MaxLength="4" />
+          <Property Name="rom2" Type="nvarchar" MaxLength="4" />
+          <Property Name="rom3" Type="nvarchar" MaxLength="4" />
+          <Property Name="rom4" Type="nvarchar" MaxLength="4" />
+          <Property Name="rom5" Type="nvarchar" MaxLength="4" />
+          <Property Name="mboat" Type="nvarchar" MaxLength="4" />
+          <Property Name="calsaat1" Type="varchar" MaxLength="5" />
+          <Property Name="calsaat2" Type="varchar" MaxLength="5" />
+          <Property Name="calsaat3" Type="varchar" MaxLength="5" />
+          <Property Name="calsaat4" Type="varchar" MaxLength="5" />
+          <Property Name="acente" Type="nvarchar" MaxLength="30" />
+          <Property Name="oper" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <EntityContainer Name="PilotdbModel1vardetayStoreContainer">
+          <EntitySet Name="vardiyadetay" EntityType="Self.vardiyadetay" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PilotdbModel1vardetay" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="PilotdbEntitiesvardetay" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="vardiyadetay" EntityType="PilotdbModel1vardetay.vardiyadetay" />
+        </EntityContainer>
+        <EntityType Name="vardiyadetay">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="kapno" Type="Int32" />
+          <Property Name="degismecikapno" Type="Int32" />
+          <Property Name="varno" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="gemiadi" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="bayrak" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="grt" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="tip" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+          <Property Name="binisyeri" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="binisrihtim" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+          <Property Name="inisyeri" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="inisrihtim" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+          <Property Name="istasyoncikis" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+          <Property Name="pob" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+          <Property Name="poff" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+          <Property Name="istasyongelis" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+          <Property Name="manevraiptal" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Type="String" Name="varid" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="imono" />
+          <Property Name="rangeleft" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="rangerest" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="rangework" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="notlar" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="talepno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="jnot" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="rom1" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="rom2" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="rom3" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="rom4" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="calsaat1" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="calsaat2" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="acente" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="oper" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="mboat" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="rom5" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="calsaat3" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="calsaat4" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PilotdbModel1vardetayStoreContainer" CdmEntityContainer="PilotdbEntitiesvardetay">
+          <EntitySetMapping Name="vardiyadetay">
+            <EntityTypeMapping TypeName="PilotdbModel1vardetay.vardiyadetay">
+              <MappingFragment StoreEntitySet="vardiyadetay">
+                <ScalarProperty Name="calsaat4" ColumnName="calsaat4" />
+                <ScalarProperty Name="calsaat3" ColumnName="calsaat3" />
+                <ScalarProperty Name="rom5" ColumnName="rom5" />
+                <ScalarProperty Name="mboat" ColumnName="mboat" />
+                <ScalarProperty Name="oper" ColumnName="oper" />
+                <ScalarProperty Name="acente" ColumnName="acente" />
+                <ScalarProperty Name="calsaat2" ColumnName="calsaat2" />
+                <ScalarProperty Name="calsaat1" ColumnName="calsaat1" />
+                <ScalarProperty Name="rom4" ColumnName="rom4" />
+                <ScalarProperty Name="rom3" ColumnName="rom3" />
+                <ScalarProperty Name="rom2" ColumnName="rom2" />
+                <ScalarProperty Name="rom1" ColumnName="rom1" />
+                <ScalarProperty Name="jnot" ColumnName="jnot" />
+                <ScalarProperty Name="talepno" ColumnName="talepno" />
+                <ScalarProperty Name="notlar" ColumnName="notlar" />
+                <ScalarProperty Name="rangework" ColumnName="rangework" />
+                <ScalarProperty Name="rangerest" ColumnName="rangerest" />
+                <ScalarProperty Name="rangeleft" ColumnName="rangeleft" />
+                <ScalarProperty Name="imono" ColumnName="imono" />
+                <ScalarProperty Name="varid" ColumnName="varid" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="kapno" ColumnName="kapno" />
+                <ScalarProperty Name="degismecikapno" ColumnName="degismecikapno" />
+                <ScalarProperty Name="varno" ColumnName="varno" />
+                <ScalarProperty Name="gemiadi" ColumnName="gemiadi" />
+                <ScalarProperty Name="bayrak" ColumnName="bayrak" />
+                <ScalarProperty Name="grt" ColumnName="grt" />
+                <ScalarProperty Name="tip" ColumnName="tip" />
+                <ScalarProperty Name="binisyeri" ColumnName="binisyeri" />
+                <ScalarProperty Name="binisrihtim" ColumnName="binisrihtim" />
+                <ScalarProperty Name="inisyeri" ColumnName="inisyeri" />
+                <ScalarProperty Name="inisrihtim" ColumnName="inisrihtim" />
+                <ScalarProperty Name="istasyoncikis" ColumnName="istasyoncikis" />
+                <ScalarProperty Name="pob" ColumnName="pob" />
+                <ScalarProperty Name="poff" ColumnName="poff" />
+                <ScalarProperty Name="istasyongelis" ColumnName="istasyongelis" />
+                <ScalarProperty Name="manevraiptal" ColumnName="manevraiptal" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

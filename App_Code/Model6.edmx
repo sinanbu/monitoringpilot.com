@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="isliste6.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="isliste">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="imono" Type="int" />
+          <Property Name="gemiadi" Type="nvarchar" MaxLength="30" />
+          <Property Name="demiryeri" Type="varchar" MaxLength="20" />
+          <Property Name="kalkislimani" Type="varchar" MaxLength="20" />
+          <Property Name="kalkisrihtimi" Type="varchar" MaxLength="16" />
+          <Property Name="yanasmalimani" Type="varchar" MaxLength="20" />
+          <Property Name="yanasmarihtimi" Type="varchar" MaxLength="16" />
+          <Property Name="eta" Type="varchar" MaxLength="16" />
+          <Property Name="etb" Type="varchar" MaxLength="16" />
+          <Property Name="etd" Type="varchar" MaxLength="16" />
+          <Property Name="bowt" Type="varchar" MaxLength="5" />
+          <Property Name="strnt" Type="varchar" MaxLength="5" />
+          <Property Name="bowok" Type="char" MaxLength="1" />
+          <Property Name="bayrak" Type="nvarchar" MaxLength="20" />
+          <Property Name="grt" Type="varchar" MaxLength="6" />
+          <Property Name="tip" Type="varchar" MaxLength="16" />
+          <Property Name="loa" Type="varchar" MaxLength="3" />
+          <Property Name="draft" Type="varchar" MaxLength="5" />
+          <Property Name="bilgi" Type="varchar" MaxLength="5" />
+          <Property Name="tehlikeliyuk" Type="varchar" MaxLength="3" />
+          <Property Name="acente" Type="nvarchar" MaxLength="40" />
+          <Property Name="fatura" Type="nvarchar" MaxLength="20" />
+          <Property Name="notlar" Type="nvarchar" MaxLength="200" />
+          <Property Name="talepno" Type="varchar" MaxLength="20" />
+          <Property Name="pratika" Type="varchar" MaxLength="3" />
+          <Property Name="pratikano" Type="varchar" MaxLength="20" />
+          <Property Name="nedurumda" Type="char" MaxLength="1" />
+          <Property Name="nedurumdaopr" Type="char" MaxLength="1" />
+          <Property Name="gizlegoster" Type="char" MaxLength="1" />
+          <Property Name="kayitzamani" Type="varchar" MaxLength="16" />
+          <Property Name="kaydeden" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+        <EntityContainer Name="isliste6StoreContainer">
+          <EntitySet Name="isliste" EntityType="Self.isliste" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="isliste6" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="PilotdbEntities2" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="isliste" EntityType="isliste6.isliste" />
+        </EntityContainer>
+        <EntityType Name="isliste">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="imono" Type="Int32" />
+          <Property Name="gemiadi" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="demiryeri" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="kalkislimani" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="kalkisrihtimi" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+          <Property Name="yanasmalimani" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="yanasmarihtimi" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+          <Property Name="eta" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+          <Property Name="etb" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+          <Property Name="etd" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+          <Property Name="bowt" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="strnt" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="bayrak" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="grt" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="tip" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+          <Property Name="loa" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="draft" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="bilgi" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="tehlikeliyuk" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="acente" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+          <Property Name="fatura" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="notlar" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="talepno" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="nedurumda" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="nedurumdaopr" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="gizlegoster" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="kayitzamani" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+          <Property Name="kaydeden" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="bowok" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="pratika" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="pratikano" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="isliste6StoreContainer" CdmEntityContainer="PilotdbEntities2">
+          <EntitySetMapping Name="isliste">
+            <EntityTypeMapping TypeName="isliste6.isliste">
+              <MappingFragment StoreEntitySet="isliste">
+                <ScalarProperty Name="pratikano" ColumnName="pratikano" />
+                <ScalarProperty Name="pratika" ColumnName="pratika" />
+                <ScalarProperty Name="bowok" ColumnName="bowok" />
+                <ScalarProperty Name="kaydeden" ColumnName="kaydeden" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="imono" ColumnName="imono" />
+                <ScalarProperty Name="gemiadi" ColumnName="gemiadi" />
+                <ScalarProperty Name="demiryeri" ColumnName="demiryeri" />
+                <ScalarProperty Name="kalkislimani" ColumnName="kalkislimani" />
+                <ScalarProperty Name="kalkisrihtimi" ColumnName="kalkisrihtimi" />
+                <ScalarProperty Name="yanasmalimani" ColumnName="yanasmalimani" />
+                <ScalarProperty Name="yanasmarihtimi" ColumnName="yanasmarihtimi" />
+                <ScalarProperty Name="eta" ColumnName="eta" />
+                <ScalarProperty Name="etb" ColumnName="etb" />
+                <ScalarProperty Name="etd" ColumnName="etd" />
+                <ScalarProperty Name="bowt" ColumnName="bowt" />
+                <ScalarProperty Name="strnt" ColumnName="strnt" />
+                <ScalarProperty Name="bayrak" ColumnName="bayrak" />
+                <ScalarProperty Name="grt" ColumnName="grt" />
+                <ScalarProperty Name="tip" ColumnName="tip" />
+                <ScalarProperty Name="loa" ColumnName="loa" />
+                <ScalarProperty Name="draft" ColumnName="draft" />
+                <ScalarProperty Name="bilgi" ColumnName="bilgi" />
+                <ScalarProperty Name="tehlikeliyuk" ColumnName="tehlikeliyuk" />
+                <ScalarProperty Name="acente" ColumnName="acente" />
+                <ScalarProperty Name="fatura" ColumnName="fatura" />
+                <ScalarProperty Name="notlar" ColumnName="notlar" />
+                <ScalarProperty Name="talepno" ColumnName="talepno" />
+                <ScalarProperty Name="nedurumda" ColumnName="nedurumda" />
+                <ScalarProperty Name="nedurumdaopr" ColumnName="nedurumdaopr" />
+                <ScalarProperty Name="gizlegoster" ColumnName="gizlegoster" />
+                <ScalarProperty Name="kayitzamani" ColumnName="kayitzamani" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
