@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "www.monitoringpilot.com", "http://localhost:53642", "{46D9B1DB-1210-BC8E-2A9E-E1DA177F49CA}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53642"
+		Debug.AspNetCompiler.PhysicalPath = "E:\SHIP-MP1\www.monitoringpilot.com\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53642\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53642"
+		Release.AspNetCompiler.PhysicalPath = "E:\SHIP-MP1\www.monitoringpilot.com\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53642\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "E:\SHIP-MP1\www.monitoringpilot.com\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46D9B1DB-1210-BC8E-2A9E-E1DA177F49CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46D9B1DB-1210-BC8E-2A9E-E1DA177F49CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8751DCA-DD76-4F98-84A1-2820E0FE68B4}
+	EndGlobalSection
+EndGlobal
